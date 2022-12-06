@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/config.css">
+  <title>Inbound Media | Register</title>
+
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <script type="module" src="./routes/register.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container_log">
+        <a href="/" class="logo"><i class="fa-brands fa-facebook"></i>Inbound Media</a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <div class="dev-container"></div>
+  <!--NAV FINISH-->
+  <div class="headline_two">
+
+    <p class="inner-headline">Don't keep your secrets, share them anonymously!</p>
+    <p class="lead_two">Please enter your credentials to register </p>
+  </div>
+
+
+  <div class="container_bg">
+
+    <form action="/register" class="form-signin" method="post">
+      <h1>Register</h1>
+      <div id="flash"></div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" name="email" required type="email"
+          class="form-control" title="Must be a valid email address" placeholder="name@example.com" />
+
+      </div>
+
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input id="username"  name="username" required type="text" class="form-control"
+          title="Must Container 4 Characters" placeholder="Enter Your Name" />
+
+      </div>
+
+      <div class="form-group">
+        <label for="avatar">Avatar</label>
+        <input id="avatar" name="avatar" required type="text" class="form-control" placeholder="Enter a image link " />
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="banner">Banner</label>
+        <input id="banner" name="banner" required type="text" class="form-control"
+          placeholder="Enter a image link for Banner" />
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="password" class="form-control">Password</label>
+        <input title=" Must be at least 8 characters" name="password" pattern="[a-zA-Z0-9]{8,}" class="form-control"
+          required type="text" id="password" />
+        <p class="alert alert-danger"> Must be at least 8 characters</p>
+      </div>
+
+      <button type="button" id="register-submit" class="btn_fourth">Register</button>
+
+    </form>
+  </div>
+  <!--ACTUALLY A FORM-->
+
+  <!-- *Footer start -->
+  <footer class="footer">
+    <div class="container_row">
+
+      <!-- *language choice -->
+      <div class="language">
+        <p class="mx-2 fs-7 mb-0">English (US)</p>
+        <p class="mx-2 fs-7 mb-0">Norwegian Arabic</p>
+        <p class="mx-2 fs-7 mb-0">, French, Portuguese, </p>
+        <p class="mx-2 fs-7 mb-0">Spanish, Chinese,</p>
+        <p class="mx-2 fs-7 mb-0">Russian</p>
+      </div>
+      <hr />
+      <!-- actions -->
+      <div class="language">
+        <p class="mx-2 fs-7 mb-0">Sign Up</p>
+        <p class="mx-2 fs-7 mb-0">Login</p>
+        <p class="mx-2 fs-7 mb-0">Messenger</p>
+        <p class="mx-2 fs-7 mb-0">Inbound Media Lite</p>
+        <p class="mx-2 fs-7 mb-0">Watch</p>
+      </div>
+      <!-- !copy -->
+      <div class="mt-4 mx-2">
+        <p class="fs-7">Inbound Media &copy; 2022</p>
+      </div>
+    </div>
+  </footer>
+  <!-- *Footer ends here -->
+
+
+</body>
+
+</html>

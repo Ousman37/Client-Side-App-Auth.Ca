@@ -1,0 +1,35 @@
+{
+  "name": "client-side-app-auth.ca",
+  "version": "1.0.2",
+  "description": "Social media app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js",
+    "build": "sass src/scss:src/dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ousman37/Client-Side-App-Auth.Ca.git"
+  },
+  "keywords": [
+    "Login",
+    "register",
+    "auth"
+  ],
+  "author": "Ethmane Ousman <ousman.didibela@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ousman37/Client-Side-App-Auth.Ca/issues"
+  },
+  "homepage": "https://github.com/Ousman37/Client-Side-App-Auth.Ca#readme",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "npm-sass": "^3.1.0"
+  }
+}

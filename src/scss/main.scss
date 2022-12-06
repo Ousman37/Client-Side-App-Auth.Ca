@@ -1,0 +1,388 @@
+@import 'variables';
+
+@import 'base';
+
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.name-content {
+  margin-right: 20rem;
+}
+
+.name-content .logo {
+  font-size: 3.5rem;
+  color: $primary;
+}
+
+.name-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 2rem;
+
+  width: 329px;
+  height: 242px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  overflow: hidden;
+}
+
+.form-signin {
+  width: 530px;
+  height: 380px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+#form input {
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+#form input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+#form .login {
+  outline: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  color: $light;
+}
+
+#form .login:focus {
+  cursor: pointer;
+}
+
+#form a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  color: #1877f2;
+}
+
+.account-signup-reg,
+.account-signup {
+  max-width: 524px;
+  padding: 15px 64px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10rem;
+}
+
+/*
+#form hr {
+  background: #f7f7f7;
+  margin: 1rem;
+}*/
+
+#form hr {
+  background: #f7f7f7;
+  margin: 1rem;
+}
+
+.wrapper_fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.helper-text {
+  color: $helper;
+}
+
+/* login error message*/
+
+#login-error {
+  margin-bottom: 1em;
+  color: $danger;
+}
+
+.alert {
+  margin-bottom: 1em;
+  color: $danger-color;
+}
+
+#form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: -1em;
+  box-shadow: $danger-color;
+}
+.btn-primary {
+  background-color: $primary-color;
+}
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.account-signup-reg,
+.account-signup {
+  max-width: 524px;
+
+  padding: 15px 80px;
+
+  padding: 15px 60px;
+
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10rem;
+}
+
+.text-center {
+  margin-top: -1rem;
+}
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* //.........Media Query.........// */
+
+@media (max-width: 280px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  #form {
+    width: 259px;
+    height: fit-content;
+  }
+
+  #form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form .login {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  #form {
+    width: 259px;
+    height: fit-content;
+  }
+
+  #form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form .login {
+    font-size: 1.5rem;
+  }
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  #form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+  .content {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  #form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  #form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form .login {
+    font-size: 1.5rem;
+  }
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  #form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+  .account-signup-reg,
+  .account-signup {
+    max-width: 524px;
+    padding: 15px 70px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 810px) {
+  .account-signup-reg,
+  .account-signup {
+    max-width: 524px;
+    padding: 15px 80px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  #form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  #form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form .login {
+    font-size: 1.5rem;
+  }
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  #form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (orientation: landscape) and (min-width: 1217px) {
+  .account-signup-reg,
+  .account-signup {
+    max-width: 524px;
+    padding: 15px 64px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+  }
+}
+
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  .account-signup-reg,
+  .account-signup {
+    max-width: 524px;
+    padding: 15px 115px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+  .content {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+}

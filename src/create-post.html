@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/create.css">
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>Welcome to the | Inbound Media</title>
+  <title>Inbound Media | Create Post</title>
+
+
+  <script defer type="module" src="./routes/create-post.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1>
+        <a href="/" class="logo"><i class="fa-brands fa-facebook"></i>Inbound Media
+        </a>
+      </h1>
+
+    </nav>
+  </header>
+
+  <div class="headline_two">
+    <p class="inner-headline">Welcome create a posts and share your ideas others!</p>
+  </div>
+
+
+  <div class="container_bg">
+
+    <form action="#" class="form-signin">
+      <h1>Create post</h1>
+      <div id="flash"></div>
+      <div class="form-group">
+        <label for="email">Title</label>
+        <input id="title" name="title" required type="text" class="form-control" placeholder="Title" />
+
+
+      </div>
+
+      <div class="form-group">
+        <label for="username">Body</label>
+        <input id="body" name="body" required type="text" class="form-control" title="Must Container 4 Characters"
+          placeholder="Body" />
+
+      </div>
+
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <input id="tags" name="Tags" required type="text" class="form-control" placeholder="Tags" />
+
+      </div>
+
+      <div class="form-group">
+        <label for="media">Media</label>
+        <input id="media" name="Media" required type="text" class="form-control"
+          placeholder="Enter a image link for Banner" />
+      </div>
+      <button id="create-submit" type="button" class="btn btn-primary">Create Entry</button>
+
+    </form>
+  </div>
+  <!--ACTUALLY A FORM-->
+
+  <!-- *Footer start -->
+  <footer class="footer">
+    <div class="container_row">
+
+      <!-- *language choice -->
+      <div class="language">
+        <p class="mx-2 fs-7 mb-0">English (US)</p>
+        <p class="mx-2 fs-7 mb-0">Norwegian Arabic</p>
+        <p class="mx-2 fs-7 mb-0">, French, Portuguese, </p>
+        <p class="mx-2 fs-7 mb-0">Spanish, Chinese,</p>
+        <p class="mx-2 fs-7 mb-0">Russian</p>
+      </div>
+
+      <!-- actions -->
+      <div class="language">
+        <p class="mx-2 fs-7 mb-0">Sign Up</p>
+        <p class="mx-2 fs-7 mb-0">Login</p>
+        <p class="mx-2 fs-7 mb-0">Messenger</p>
+        <p class="mx-2 fs-7 mb-0">Inbound Media Lite</p>
+        <p class="mx-2 fs-7 mb-0">Watch</p>
+      </div>
+      <!-- !copy -->
+      <div class="Copywriter">
+        <p class="fs-7">Inbound Media &copy; 2022</p>
+      </div>
+    </div>
+  </footer>
+  <!-- *Footer ends here -->
+
+</body>
+
+</html>

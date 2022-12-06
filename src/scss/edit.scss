@@ -1,0 +1,472 @@
+@import 'variables';
+
+@import 'base';
+
+
+header {
+  background-color: $primary-color;
+  display: flex;
+  /*position: fixed;*/
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $primary;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  height: 1em;
+  margin-right: 2em;
+  width: 14em;
+  color: $light-color;
+  display: inline-block;
+
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1em;
+  font-weight: bold;
+  margin-left: 0.5em;
+  font-family: $font-family;
+  font-weight: bold;
+  top: -10rem;
+  text-transform: uppercase;
+  padding: 10px 0 45px;
+  margin-bottom: 1rem;
+}
+
+.fa-facebook {
+  color: $light-color;
+}
+
+.container_bg {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: -0.3rem;
+  margin-bottom: 10rem;
+}
+
+.headline-three,
+.headline_two,
+.headliner {
+  background-color: #dc3545;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  color: $light-color;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: -1em;
+  box-shadow: $danger-color;
+}
+
+.form-signin {
+  max-width: 100%;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: -11rem;
+}
+
+/*---  Form input ----*/
+.form-control {
+  width: 100%;
+  border: 1px solid $light-color;
+  border-radius: $border-radius;
+  padding: 0.5rem;
+  font-size: 1em;
+  font-size: 16px;
+  padding: 10px 10 10 12px;
+  box-sizing: border-box;
+  height: auto;
+  border-radius: $border-radius;
+}
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: $dark-color;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.btn,
+.btn-primary {
+  background: $primary-color;
+  color: $light-color;
+  border-radius: $border-radius-lg;
+  padding: 0.5rem 2rem;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-top: 2rem;
+
+  &:hover {
+    background: $indigo;
+    color: $light-color;
+  }
+}
+
+.tag a {
+  color: $primary-color;
+}
+/*---- language ------*/
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: $border-radius;
+  font-size: $font-size-sm;
+  color: $dark-color;
+}
+
+.Copywriter {
+  text-align: center;
+}
+/* Posts Page!*/
+
+/*----- footer ----- */
+@media (min-width: 62em) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+  }
+  .logo h1 {
+    margin-right: 1em;
+    width: 14em;
+  }
+}
+
+@media (min-width: 412px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+  }
+
+  .logo {
+    height: 1em;
+    margin-right: 2em;
+    width: 2em;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1em;
+    margin-left: 2.5rem;
+    top: -10rem;
+    margin-bottom: 2rem;
+  }
+  .form-control {
+    width: 321px;
+  }
+
+  .form-signin {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: -29rem;
+  }
+
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.helper-text {
+  color: tomato;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+@media (min-width: 360px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .logo {
+    width: 10em;
+    font-size: 2.25rem;
+    margin-left: 7.5rem;
+    margin-bottom: 0rem;
+  }
+ 
+  .form-control {
+    width: 263px;
+  }
+  .form-signin {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: -50rem;
+    height: 100%;
+  }
+
+  .language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: -1em;
+    border-radius: 0.25rem;
+    border: 1px solid #e6e6e6;
+  }
+  .btn,
+  .btn-light,
+  .tag a {
+    font-size: 1rem;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.helper-text {
+  color: tomato;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+@media (min-width: 375px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .logo {
+    width: 10em;
+    font-size: 2.25rem;
+    margin-left: 5.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .form-control {
+    width: 285px;
+  }
+  .form-signin {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -50rem;
+    height: 100%;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: -1em;
+    border-radius: 0.25rem;
+    border: 1px solid #e6e6e6;
+  }
+
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.helper-text {
+  color: tomato;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+@media (min-width: 384px) {
+  .form-control {
+    width: 293px;
+  }
+}
+ 
+
+
+
+
+@media (min-width: 428px) {
+  .form-control {
+    width: 323px;
+  }
+}
+
+
+@media (min-width: 414px) {
+  .form-control {
+    width: 323px;
+  }
+}
+
+@media (min-width: 428px) {
+  .form-control {
+    width: 335px;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .logo {
+    width: 10em;
+    font-size: 2.25rem;
+    margin-left: 7.5rem;
+    margin-bottom: 0rem;
+  }
+  .form-control {
+    width: 706px;
+  }
+}
+
+@media (min-width: 810px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .logo {
+    width: 10em;
+    font-size: 2.25rem;
+    margin-left: 7.5rem;
+    margin-bottom: 0rem;
+  }
+  .form-control {
+    width: 376px;
+  }
+  .form-signin {
+    width: 57%;
+    margin: 0 auto;
+    margin-bottom: -50rem;
+    height: 100%;
+  }
+
+  .language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: -1em;
+    border-radius: 0.25rem;
+    border: 1px solid #e6e6e6;
+  }
+  .btn,
+  .btn-light,
+  .tag a {
+    font-size: 1rem;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.helper-text {
+  color: tomato;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+/*
+@media (min-width: 769px) and (max-width: 1200px) {
+  .form-control {
+    width: 458px;
+  }
+*/
+@media (orientation: landscape) and (min-width: 1280px) {
+  .account-signup-reg,
+  .account-signup {
+    max-width: 524px;
+    padding: 15px 115px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+  }
+
+  .form-control {
+    width: 701px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+  .content {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+}
