@@ -35,7 +35,7 @@ app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', '404.html'));
 });
 
-app.listen(8000, () => {
-    console.log('Backend server is running at port 8000!');
+app.listen(4000, () => {
+    console.log('Backend server is running at port 4000!');
 });
 
