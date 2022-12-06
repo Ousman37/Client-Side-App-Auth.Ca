@@ -1,4 +1,4 @@
-import { getToken } from './utils.js.js';
+import { getToken } from './utils.js';
 
 let fetchPost = async (url, postData) => {
     let token = getToken();
