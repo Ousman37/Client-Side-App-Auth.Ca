@@ -1,13 +1,13 @@
 import { loginUrl } from './url.js';
 document.getElementById('login-submit').addEventListener('click', loginPost);
-let loader = document.getElementById('loading');
+const loader = document.getElementById('loading');
 function loginPost() {
     loader.classList.remove('display-none');
-    
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
 
-    let userBody = {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const userBody = {
         email: `${email}`,
         password: `${password}`,
     };
@@ -20,7 +20,7 @@ function loginPost() {
     };
 
     // eslint-disable-next-line no-unused-vars
-    let flashMessage = '';
+    const flashMessage = '';
 
     fetch(loginUrl, opts)
         .then(res => res.json())

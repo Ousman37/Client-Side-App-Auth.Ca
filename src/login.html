@@ -15,8 +15,18 @@
 
   <script type="module" src="./routes/login.js" defer></script>
 </head>
+
 <body>
-  <div id="loading" class="loading display-none" ></div>
+  <div id="loading">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+    <p>Loading...</p>
+  </div>
+
+  <!-- <div id="loading" class="loading display-none"></div> -->
   <section>
     <div class="content">
       <div class="flex-div">
@@ -48,8 +58,9 @@
                 <li class="uppercase">Must contain an uppercase letter.</li>
                 <li class="special">Must contain a number or special character.</li>
               </ul>
-              <button type="button" id="login-submit"
-                class="btn btn-primary  w-100 my-3 text-light login">Login</button>
+              <button type="submit">Login</button>
+              <!-- <button type="button" id="login-submit"
+                class="btn btn-primary  w-100 my-3 text-light login">Login</button>-->
 
 
               <a href="#" class="text-decoration-none text-center">
